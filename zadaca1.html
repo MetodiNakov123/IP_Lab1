@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 1</title>
+    <script>
+        var broj = prompt("Vnesete trocifren broj: ");
+        broj = parseInt(broj);
+
+        if (!isNaN(broj)){
+            if (broj>99 && broj<1000){
+                var stotki = parseInt(broj / 100);
+                var edinici = parseInt(broj % 10);
+
+                if (stotki === edinici){
+                  document.write("Brojot e palidrom");
+                }
+                else{
+                    document.write("Brojot ne e palidrom");
+                }
+
+            }
+            else{
+                document.write("Vneseniot broj ne e trocifren!!!");
+            }
+
+        }
+        else{
+            document.write("Treba da vnesete trocifren BROJ!!!");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

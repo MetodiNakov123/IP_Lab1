@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 4</title>
+
+    <script>
+
+        var br1 = prompt("Vnesi go prviot broj: ");
+        br1 = parseInt(br1);
+
+        var br2 = prompt("Vnesi go vtoriot broj: ");
+        br2 = parseInt(br2);
+
+        var br3 = prompt("Vnesi go tretiot broj: ");
+        br3 = parseInt(br3);
+
+        if (!isNaN(br1) && !isNaN(br2) && !isNaN(br3)){
+            var pr = br1 * br2 * br3;
+
+            if (pr > 0 ){
+                document.write("Знакот е: +");
+            }
+            else if (pr < 0) {
+                document.write("Знакот е: -");
+            }
+            else{
+                document.write("Производот е 0 ");
+            }
+
+        }
+        else{
+            alert("Ne ste napisale 3 broja!!!");
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

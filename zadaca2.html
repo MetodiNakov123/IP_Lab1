@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 2</title>
+
+    <script>
+        var telBroj=prompt("Vnesete telefonski broj so format XXYYYZZZ: ");
+        var broj = parseInt(telBroj);
+        if (telBroj.length!=8 || isNaN(broj)){
+            alert("Vnesovte pogresen format na telefonski broj!!!");
+        }
+        else{
+            var operator;
+            if (telBroj.charAt(0) == '7'){
+                if (telBroj.charAt(1) == '0' || telBroj.charAt(1) == '1' || telBroj.charAt(1) == '2'){
+                    operator = "T-mobile";
+                }
+                else if(telBroj.charAt(1) == '5' || telBroj.charAt(1) == '6'){
+                    operator = "One";
+                }
+                else if(telBroj.charAt(1) == '7' || telBroj.charAt(1) == '8'){
+                    operator = "Vip";
+                }
+
+                var format;
+                format = '0' + telBroj.charAt(0) + telBroj.charAt(1) + "/" + telBroj.charAt(2) + telBroj.charAt(3) + telBroj.charAt(4) + "-" + telBroj.charAt(5) + telBroj.charAt(6) + telBroj.charAt(7) + "  " + operator;
+
+                document.write(format);
+            }
+            else{
+                alert("Vnesovte pogresen format na telefonski broj!!!");
+            }
+
+
+        }
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
